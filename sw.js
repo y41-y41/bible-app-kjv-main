@@ -69,8 +69,8 @@ const APP_SHELL_URLS = [
 
 // Generate URLs for all individual book files
 const DATA_URLS = BIBLE_BOOKS_META.map(book => {
-    const sanitizedBookName = book.name.replace(/\s/g, '');
-    return `/data/json/${sanitizedBookName}.json`;
+    const sanitizedBookName = book.name.replace(/\s/g, '').toLowerCase();
+    return `/json/${sanitizedBookName}.json`;
 });
 
 const urlsToCache = [...APP_SHELL_URLS, ...DATA_URLS];

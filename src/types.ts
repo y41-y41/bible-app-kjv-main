@@ -89,5 +89,6 @@ export interface ResolvedHighlight {
     bookName: string;
     chapter: number;
     reference: string;
+    verse: number;
     text: string;
 }

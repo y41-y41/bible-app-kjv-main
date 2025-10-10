@@ -5,8 +5,8 @@ const bookCache: Record<string, any> = {};
 
 // Helper to generate the path for a book's JSON file
 const getBookPath = (bookName: string): string => {
-    const sanitizedBookName = bookName.replace(/\s/g, '');
-    return `/data/json/${sanitizedBookName}.json`;
+    const sanitizedBookName = bookName.replace(/\s/g, '').toLowerCase();
+   return `/json/${sanitizedBookName}.json`;
 };
 
 // Fetches a full book if not in cache
