@@ -4,13 +4,14 @@
   "description": "An advanced, offline-first KJV Bible study tool with search, favorites, and reading history.",
   "icons": [
     {
-      "src": "/bible-app-kjv/icons/icon-192.png",
+      "src": "icons/icon-192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "theme_color": "#1f2937",
   "background_color": "#1f2937"
